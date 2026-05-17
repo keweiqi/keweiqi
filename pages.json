@@ -1,0 +1,46 @@
+{
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "静悟",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f8f3e8",
+    "rpxCalcBaseDeviceWidth": 375,
+    "rpxCalcEnable": true,
+    "maxWidth": 750
+  },
+  "pages": [
+    {"path":"pages/index/index","style":{}},
+    {"path":"pages/liebiao/dao-list","style":{}},
+    {"path":"pages/liebiao/fo-list","style":{}},
+    {"path":"pages/dao/zhenjing","style":{}},
+    {"path":"pages/dao/weiyi","style":{}},
+    {"path":"pages/dao/xiushen","style":{}},
+    {"path":"pages/fo/dacheng","style":{}},
+    {"path":"pages/fo/lvbu","style":{}},
+    {"path":"pages/fo/lunzhu","style":{}},
+    {"path":"pages/read/read","style":{}},
+    {"path":"pages/wode/wode","style":{}},
+	{
+	  "path": "pages/wode/shoucang", "style": {}
+	},
+	{
+	  "path": "pages/wode/yuedulishi", "style": {}
+	}
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的"
+      }
+    ]
+  }
+}

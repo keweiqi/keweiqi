@@ -1,0 +1,40 @@
+// 主题变量系统
+:root {
+  // 浅色主题
+  --bg-primary: #f8f3e8;
+  --bg-secondary: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.95);
+  
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  
+  --color-primary: #8c3d1e;
+  --color-secondary: #c4703f;
+  --color-accent: #e6a23c;
+  
+  --border-color: #e8e8e8;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+// 深色主题
+.dark {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #222222;
+  --bg-card: rgba(34, 34, 34, 0.95);
+  
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+  
+  --color-primary: #c4703f;
+  --color-secondary: #8c3d1e;
+  --color-accent: #e6a23c;
+  
+  --border-color: #333333;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+// 使用示例
+// background: var(--bg-primary);
+// color: var(--text-primary);

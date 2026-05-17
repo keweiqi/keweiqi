@@ -1,0 +1,32 @@
+[
+  {"id":1,"name":"道德经","category":"四辅部·太玄部","type":2},
+  {"id":2,"name":"南华真经","category":"四辅部·太玄部","type":2},
+  {"id":3,"name":"文始真经","category":"四辅部·太玄部","type":2},
+  {"id":4,"name":"冲虚真经","category":"四辅部·太玄部","type":2},
+  {"id":5,"name":"黄帝阴符经","category":"四辅部·太玄部","type":2},
+
+  {"id":6,"name":"太平经","category":"四辅部·太平部","type":2},
+  {"id":7,"name":"太上洞渊神咒经","category":"四辅部·太平部","type":2},
+
+  {"id":8,"name":"周易参同契","category":"四辅部·太清部","type":2},
+  {"id":9,"name":"悟真篇","category":"四辅部·太清部","type":2},
+  {"id":10,"name":"钟吕传道集","category":"四辅部·太清部","type":2},
+
+  {"id":11,"name":"正一盟威箓","category":"四辅部·正一部","type":2},
+  {"id":12,"name":"道法会元","category":"四辅部·正一部","type":2},
+
+  {"id":13,"name":"上清大洞真经","category":"三洞部·洞真部","type":1},
+  {"id":14,"name":"黄庭内景经","category":"三洞部·洞真部","type":1},
+  {"id":15,"name":"太上老君说常清静经","category":"三洞部·洞真部","type":1},
+  {"id":16,"name":"高上玉皇本行集经","category":"三洞部·洞真部","type":1},
+
+  {"id":17,"name":"灵宝无量度人上品妙经","category":"三洞部·洞玄部","type":1},
+  {"id":18,"name":"太乙救苦护身妙经","category":"三洞部·洞玄部","type":1},
+
+  {"id":19,"name":"三皇内文","category":"三洞部·洞神部","type":1},
+  {"id":20,"name":"太上洞神八帝妙精经","category":"三洞部·洞神部","type":1},
+
+  {"id":21,"name":"太上感应篇","category":"核心经典","type":3},
+  {"id":22,"name":"文昌帝君阴骘文","category":"核心经典","type":3},
+  {"id":23,"name":"重阳立教十五论","category":"核心经典","type":3}
+]

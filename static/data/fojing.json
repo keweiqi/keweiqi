@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "长阿含经",
+        "alias": "长阿含",
+        "category": "阿含部",
+        "volume": 22,
+        "translator": "后秦 佛陀耶舍、竺佛念",
+        "authenticity": "真经",
+        "taisho_code": "T0001"
+    },
+    {
+        "id": 2,
+        "name": "中阿含经",
+        "alias": "中阿含",
+        "category": "阿含部",
+        "volume": 60,
+        "translator": "东晋 瞿昙僧伽提婆",
+        "authenticity": "真经",
+        "taisho_code": "T0002"
+    },
+    {
+        "id": 3,
+        "name": "杂阿含经",
+        "alias": "杂阿含",
+        "category": "阿含部",
+        "volume": 50,
+        "translator": "刘宋 求那跋陀罗",
+        "authenticity": "真经",
+        "taisho_code": "T0003"
+    },
+    {
+        "id": 4,
+        "name": "增一阿含经",
+        "alias": "增一阿含",
+        "category": "阿含部",
+        "volume": 51,
+        "translator": "东晋 瞿昙僧伽提婆",
+        "authenticity": "真经",
+        "taisho_code": "T0004"
+    },
+    {
+        "id": 5,
+        "name": "四十二章经",
+        "alias": "佛说四十二章经",
+        "category": "阿含部",
+        "volume": 1,
+        "translator": "东汉 迦叶摩腾、竺法兰",
+        "authenticity": "疑经",
+        "taisho_code": "T0017"
+    },
+    {
+        "id": 6,
+        "name": "般若波罗蜜多心经",
+        "alias": "心经、般若心经",
+        "category": "般若部",
+        "volume": 1,
+        "translator": "唐 玄奘",
+        "authenticity": "真经",
+        "taisho_code": "T0251"
+    },
+    {
+        "id": 7,
+        "name": "金刚般若波罗蜜经",
+        "alias": "金刚经、金刚般若经",
+        "category": "般若部",
+        "volume": 1,
+        "translator": "后秦 鸠摩罗什",
+        "authenticity": "真经",
+        "taisho_code": "T0235"
+    },
+    {
+        "id": 8,
+        "name": "妙法莲华经",
+        "alias": "法华经",
+        "category": "法华部",
+        "volume": 7,
+        "translator": "后秦 鸠摩罗什",
+        "authenticity": "真经",
+        "taisho_code": "T0262"
+    },
+    {
+        "id": 9,
+        "name": "大方广佛华严经",
+        "alias": "华严经",
+        "category": "华严部",
+        "volume": 80,
+        "translator": "唐 实叉难陀",
+        "authenticity": "真经",
+        "taisho_code": "T0279"
+    },
+    {
+        "id": 10,
+        "name": "佛说阿弥陀经",
+        "alias": "小阿弥陀经",
+        "category": "经集部·净土类",
+        "volume": 1,
+        "translator": "后秦 鸠摩罗什",
+        "authenticity": "真经",
+        "taisho_code": "T0366"
+    },
+    {
+        "id": 11,
+        "name": "地藏菩萨本愿经",
+        "alias": "地藏经",
+        "category": "经集部·地藏类",
+        "volume": 3,
+        "translator": "唐 实叉难陀",
+        "authenticity": "真经",
+        "taisho_code": "T0473"
+    },
+    {
+        "id": 12,
+        "name": "大佛顶首楞严经",
+        "alias": "楞严经",
+        "category": "经集部·楞严楞伽类",
+        "volume": 10,
+        "translator": "唐 般剌密帝",
+        "authenticity": "疑经",
+        "taisho_code": "T0945"
+    }
+]

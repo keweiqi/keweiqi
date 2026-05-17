@@ -1,0 +1,259 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "name": "全部",
+      "icon": "🏮"
+    },
+    {
+      "id": "buddhism",
+      "name": "佛教",
+      "icon": "🕉️"
+    },
+    {
+      "id": "taoism",
+      "name": "道教",
+      "icon": "☯️"
+    }
+  ],
+  "types": [
+    {
+      "id": "all",
+      "name": "全部类型"
+    },
+    {
+      "id": "法器",
+      "name": "法器"
+    },
+    {
+      "id": "饰品",
+      "name": "饰品"
+    },
+    {
+      "id": "书籍",
+      "name": "书籍"
+    },
+    {
+      "id": "香烛",
+      "name": "香烛"
+    },
+    {
+      "id": "摆件",
+      "name": "摆件"
+    },
+    {
+      "id": "茶具",
+      "name": "茶具"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "檀香手串",
+      "price": 198,
+      "originalPrice": 258,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=traditional%20chinese%20sandalwood%20bracelet%20prayer%20beads%20zen%20style%20elegant&image_size=square",
+      "desc": "天然檀木，静心安神",
+      "sellingPoint": "老山檀·静心养性",
+      "category": "buddhism",
+      "type": "饰品",
+      "hot": true,
+      "sales": 1236
+    },
+    {
+      "id": 2,
+      "name": "青瓷香炉",
+      "price": 268,
+      "originalPrice": 328,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=chinese%20celadon%20ceramic%20incense%20burner%20zen%20style%20traditional&image_size=square",
+      "desc": "古韵青瓷，雅致典雅",
+      "sellingPoint": "龙泉青瓷·千年工艺",
+      "category": "buddhism",
+      "type": "法器",
+      "hot": true,
+      "sales": 856
+    },
+    {
+      "id": 3,
+      "name": "手抄心经",
+      "price": 128,
+      "originalPrice": null,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=chinese%20calligraphy%20heart%20sutra%20handwritten%20scroll%20buddhist&image_size=square",
+      "desc": "名家手抄，祈福珍藏",
+      "sellingPoint": "名家真迹·结缘佳品",
+      "category": "buddhism",
+      "type": "书籍",
+      "hot": false,
+      "sales": 423
+    },
+    {
+      "id": 4,
+      "name": "木鱼摆件",
+      "price": 158,
+      "originalPrice": 188,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=traditional%20chinese%20wooden%20fish%20ornament%20zen%20decor%20buddhist&image_size=square",
+      "desc": "实木雕刻，清脆悦耳",
+      "sellingPoint": "黄杨木雕·法器精品",
+      "category": "buddhism",
+      "type": "法器",
+      "hot": false,
+      "sales": 389
+    },
+    {
+      "id": 5,
+      "name": "禅意挂画",
+      "price": 328,
+      "originalPrice": 398,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=chinese%20zen%20style%20ink%20painting%20wall%20art%20bamboo%20peaceful&image_size=square",
+      "desc": "水墨丹青，意境深远",
+      "sellingPoint": "名师画作·意境悠远",
+      "category": "buddhism",
+      "type": "摆件",
+      "hot": true,
+      "sales": 567
+    },
+    {
+      "id": 6,
+      "name": "紫砂茶壶",
+      "price": 458,
+      "originalPrice": 528,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=yixing%20purple%20clay%20teapot%20chinese%20traditional%20elegant&image_size=square",
+      "desc": "宜兴紫砂，茶香四溢",
+      "sellingPoint": "宜兴紫砂·匠心之作",
+      "category": "taoism",
+      "type": "茶具",
+      "hot": true,
+      "sales": 723
+    },
+    {
+      "id": 7,
+      "name": "经书礼盒",
+      "price": 168,
+      "originalPrice": null,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=chinese%20buddhist%20scriptures%20book%20gift%20box%20elegant%20traditional&image_size=square",
+      "desc": "经典合集，修身养性",
+      "sellingPoint": "佛经合集·开智慧",
+      "category": "buddhism",
+      "type": "书籍",
+      "hot": false,
+      "sales": 298
+    },
+    {
+      "id": 8,
+      "name": "玉石平安扣",
+      "price": 298,
+      "originalPrice": 368,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=chinese%20jade%20peace%20button%20pendant%20amulet%20traditional&image_size=square",
+      "desc": "天然玉石，平安吉祥",
+      "sellingPoint": "和田玉·保平安",
+      "category": "taoism",
+      "type": "饰品",
+      "hot": true,
+      "sales": 945
+    },
+    {
+      "id": 9,
+      "name": "铜制八卦镜",
+      "price": 188,
+      "originalPrice": 228,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=chinese%20bronze%20bagua%20mirror%20fengshui%20taoist%20traditional&image_size=square",
+      "desc": "镇宅辟邪，化煞纳福",
+      "sellingPoint": "纯铜打造·镇宅之宝",
+      "category": "taoism",
+      "type": "法器",
+      "hot": true,
+      "sales": 678
+    },
+    {
+      "id": 10,
+      "name": "沉香线香",
+      "price": 88,
+      "originalPrice": 108,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=traditional%20chinese%20agarwood%20incense%20sticks%20zen%20meditation&image_size=square",
+      "desc": "天然沉香，静心凝神",
+      "sellingPoint": "越南沉香·静心首选",
+      "category": "buddhism",
+      "type": "香烛",
+      "hot": false,
+      "sales": 1523
+    },
+    {
+      "id": 11,
+      "name": "桃木剑",
+      "price": 238,
+      "originalPrice": 288,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=traditional%20chinese%20peach%20wood%20sword%20taoist%20amulet%20carving&image_size=square",
+      "desc": "桃木雕刻，驱邪避凶",
+      "sellingPoint": "正宗桃木·驱邪纳福",
+      "category": "taoism",
+      "type": "法器",
+      "hot": false,
+      "sales": 456
+    },
+    {
+      "id": 12,
+      "name": "道经合集",
+      "price": 198,
+      "originalPrice": null,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=chinese%20taoist%20scriptures%20book%20collection%20traditional%20elegant&image_size=square",
+      "desc": "道家经典，修身养性",
+      "sellingPoint": "道藏精华·悟真道",
+      "category": "taoism",
+      "type": "书籍",
+      "hot": false,
+      "sales": 312
+    },
+    {
+      "id": 13,
+      "name": "铜香炉",
+      "price": 358,
+      "originalPrice": 428,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=traditional%20chinese%20bronze%20incense%20burner%20taoist%20ritual%20vessel&image_size=square",
+      "desc": "纯铜铸造，古韵悠长",
+      "sellingPoint": "仿古铜炉·古韵悠长",
+      "category": "taoism",
+      "type": "法器",
+      "hot": true,
+      "sales": 534
+    },
+    {
+      "id": 14,
+      "name": "葫芦挂件",
+      "price": 128,
+      "originalPrice": 158,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=chinese%20gourd%20pendant%20fengshui%20taoist%20amulet%20traditional&image_size=square",
+      "desc": "天然葫芦，招财纳福",
+      "sellingPoint": "天然葫芦·福禄双全",
+      "category": "taoism",
+      "type": "饰品",
+      "hot": false,
+      "sales": 789
+    },
+    {
+      "id": 15,
+      "name": "酥油灯",
+      "price": 68,
+      "originalPrice": 88,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=traditional%20tibetan%20butter%20lamp%20buddhist%20ritual%20light&image_size=square",
+      "desc": "清净光明，祈福消灾",
+      "sellingPoint": "酥油供灯·祈愿光明",
+      "category": "buddhism",
+      "type": "香烛",
+      "hot": false,
+      "sales": 1123
+    },
+    {
+      "id": 16,
+      "name": "景泰蓝花瓶",
+      "price": 568,
+      "originalPrice": 688,
+      "image": "https://neeko-copilot.bytedance.net/api/text2image?prompt=chinese%20cloisonne%20vase%20traditional%20enamel%20craft%20elegant&image_size=square",
+      "desc": "景泰蓝工艺，精美绝伦",
+      "sellingPoint": "燕京八绝·匠心传承",
+      "category": "taoism",
+      "type": "摆件",
+      "hot": true,
+      "sales": 234
+    }
+  ]
+}
