@@ -1,7 +1,7 @@
 <template>
   <view class="list-page" :class="{ dark: isDark }">
     <view class="header">
-      <text class="title">真经典籍</text>
+      <text class="title">宋词精选</text>
     </view>
     <book-list :bookData="bookData" />
   </view>
@@ -10,10 +10,10 @@
 <script setup>
 import { ref } from 'vue'
 import { useTheme } from '../../composables/useTheme.js'
-import { daoBooks } from '../../static/data/jingdian.js'
+import { shiciBooks } from '../../static/data/shici.js'
 
 const { isDark } = useTheme()
-const bookData = ref(daoBooks.zhenjing)
+const bookData = ref(shiciBooks.songci)
 </script>
 
 <style scoped>

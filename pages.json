@@ -12,19 +12,33 @@
     {"path":"pages/index/index","style":{}},
     {"path":"pages/liebiao/dao-list","style":{}},
     {"path":"pages/liebiao/fo-list","style":{}},
+    {"path":"pages/liebiao/shici-list","style":{}},
+    {"path":"pages/liebiao/rujiao-list","style":{}},
     {"path":"pages/dao/zhenjing","style":{}},
     {"path":"pages/dao/weiyi","style":{}},
     {"path":"pages/dao/xiushen","style":{}},
     {"path":"pages/fo/dacheng","style":{}},
     {"path":"pages/fo/lvbu","style":{}},
     {"path":"pages/fo/lunzhu","style":{}},
+    {"path":"pages/shici/tangshi","style":{}},
+    {"path":"pages/shici/songci","style":{}},
+    {"path":"pages/shici/shijing","style":{}},
+    {"path":"pages/rujiao/sishu","style":{}},
+    {"path":"pages/rujiao/wujing","style":{}},
     {"path":"pages/read/read","style":{}},
+    {"path":"pages/read/comments","style":{"navigationBarTitleText":"讨论区"}},
+    {"path":"pages/read/paragraph-comments","style":{"navigationBarTitleText":"段落评论"}},
     {"path":"pages/wode/wode","style":{}},
+    {"path":"pages/wode/login","style":{"navigationBarTitleText":"登录"}},
+    {"path":"pages/wode/register","style":{"navigationBarTitleText":"注册"}},
 	{
 	  "path": "pages/wode/shoucang", "style": {}
 	},
 	{
 	  "path": "pages/wode/yuedulishi", "style": {}
+	},
+	{
+	  "path": "pages/wode/wodebiji", "style": {"navigationBarTitleText":"个人心得"}
 	}
   ],
   "tabBar": {

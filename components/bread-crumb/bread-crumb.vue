@@ -60,4 +60,15 @@ export default {
   color: #bbb;
   margin: 0 10rpx;
 }
+
+/* 深色模式适配 */
+.dark .crumb-text {
+  color: #888;
+}
+.dark .crumb-text.last {
+  color: #ccc;
+}
+.dark .arrow {
+  color: #666;
+}
 </style>

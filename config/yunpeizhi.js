@@ -17,6 +17,12 @@ const peizhi = {
         // 大藏经目录地址
         fojing_list: '',
 
+        // 诗词经典目录地址
+        shici_list: '',
+
+        // 儒教典籍目录地址
+        rujiao_list: '',
+
         // 经文内容地址前缀
         // 比如：https://xxx.oss-cn-xxx.aliyuncs.com/articles/
         jingwen_qianzhui: ''

@@ -24,6 +24,11 @@
         <view class="entry-text">大藏经论</view>
       </view>
     </view>
+
+    <!-- 预留入口提示（后期开发） -->
+    <view class="future-entry">
+      <text class="future-text">更多经典正在开发中...</text>
+    </view>
   </view>
 </template>
 
@@ -32,14 +37,12 @@ import { useTheme } from '../../composables/useTheme.js'
 
 const { isDark } = useTheme()
 
-// 跳转道教分类页
 const goDaoList = () => {
   uni.navigateTo({
     url: '/pages/liebiao/dao-list'
   })
 }
 
-// 跳转佛教分类页
 const goFoList = () => {
   uni.navigateTo({
     url: '/pages/liebiao/fo-list'
@@ -64,7 +67,6 @@ const goFoList = () => {
   transition: background-color 0.3s ease;
 }
 
-/* 暗黑模式背景 */
 .dark {
   background-color: #121212 !important;
   background-image: none !important;
@@ -97,29 +99,31 @@ const goFoList = () => {
 }
 
 .entry-item {
-  background: transparent;
-  padding: 20rpx;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 30rpx;
+  padding: 50rpx 20rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   flex: 1;
   min-width: 200rpx;
+  transition: background-color 0.3s ease;
+}
+
+.dark .entry-item {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .entry-icon {
-  width: 160rpx;
-  height: 160rpx;
+  width: 140rpx;
+  height: 140rpx;
   margin-bottom: 20rpx;
   transition: transform 0.2s ease;
 }
 
-.entry-icon:active {
-  transform: scale(0.95);
-}
-
 .entry-text {
-  font-size: 36rpx;
+  font-size: 32rpx;
   font-weight: bold;
   color: #333;
   text-align: center;
@@ -129,9 +133,23 @@ const goFoList = () => {
   color: #eee;
 }
 
-/* 点击反馈 */
 .touch-feedback:active {
   opacity: 0.8;
   transform: scale(0.96);
+}
+
+.future-entry {
+  text-align: center;
+  margin-top: 80rpx;
+}
+
+.future-text {
+  font-size: 28rpx;
+  color: #999;
+  letter-spacing: 2rpx;
+}
+
+.dark .future-text {
+  color: #666;
 }
 </style>

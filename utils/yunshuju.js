@@ -11,34 +11,26 @@ import peizhi from '../config/yunpeizhi.js';
  * @returns {Promise<string|null>} 经文内容，失败返回null
  */
 export async function congYunduanHuoquJingwen(shuming) {
-    // 如果没启用云端，直接返回null
     if (!peizhi.qiyongyunduan) {
         return null;
     }
 
-    // 如果没配置地址，返回null
     if (!peizhi.ali.jingwen_qianzhui) {
         return null;
     }
 
     try {
-        // 构建完整地址
-        // 文件名处理：把书名中的特殊字符替换一下
         const wenjianming = shuming.replace(/[^\w\u4e00-\u9fa5]/g, '_') + '.json';
         const dizhi = peizhi.ali.jingwen_qianzhui + wenjianming;
 
-        // 发起请求
         const jieguo = await uni.request({
             url: dizhi,
             method: 'GET',
             timeout: peizhi.chaoshi
         });
 
-        // 检查是否成功
         if (jieguo[1].statusCode === 200) {
-            // 返回内容
             const shuju = jieguo[1].data;
-            // 如果是对象，取content字段；如果是字符串直接用
             if (typeof shuju === 'object' && shuju.content) {
                 return shuju.content;
             }
@@ -84,63 +76,99 @@ export async function congYunduanHuoquDaojingMulu() {
  * @returns {Promise<Array|null>} 目录数组，失败返回null
  */
 export async function congYunduanHuoquFojingMulu() {
-    if (!peizhi.qiyongyunduan || !peizhi.ali.fojing_list) {
-        return null;
+  if (!peizhi.qiyongyunduan || !peizhi.ali.fojing_list) {
+    return null;
+  }
+
+  try {
+    const jieguo = await uni.request({
+      url: peizhi.ali.fojing_list,
+      method: 'GET',
+      timeout: peizhi.chaoshi
+    });
+
+    if (jieguo[1].statusCode === 200) {
+      return jieguo[1].data;
     }
 
-    try {
-        const jieguo = await uni.request({
-            url: peizhi.ali.fojing_list,
-            method: 'GET',
-            timeout: peizhi.chaoshi
-        });
-
-        if (jieguo[1].statusCode === 200) {
-            return jieguo[1].data;
-        }
-
-        return null;
-    } catch (e) {
-        console.error('从云端获取大藏经目录失败', e);
-        return null;
-    }
+    return null;
+  } catch (e) {
+    console.error('从云端获取大藏经目录失败', e);
+    return null;
+  }
 }
 
 /**
- * 下载经文并保存到本地
+ * 从云端获取诗词经典目录
+ * @returns {Promise<Object|null>} 目录对象，失败返回null
+ */
+export async function congYunduanHuoquShiciMulu() {
+  if (!peizhi.qiyongyunduan || !peizhi.ali.shici_list) {
+    return null;
+  }
+
+  try {
+    const jieguo = await uni.request({
+      url: peizhi.ali.shici_list,
+      method: 'GET',
+      timeout: peizhi.chaoshi
+    });
+
+    if (jieguo[1].statusCode === 200) {
+      return jieguo[1].data;
+    }
+
+    return null;
+  } catch (e) {
+    console.error('从云端获取诗词经典目录失败', e);
+    return null;
+  }
+}
+
+/**
+ * 从云端获取儒教典籍目录
+ * @returns {Promise<Object|null>} 目录对象，失败返回null
+ */
+export async function congYunduanHuoquRujiaoMulu() {
+  if (!peizhi.qiyongyunduan || !peizhi.ali.rujiao_list) {
+    return null;
+  }
+
+  try {
+    const jieguo = await uni.request({
+      url: peizhi.ali.rujiao_list,
+      method: 'GET',
+      timeout: peizhi.chaoshi
+    });
+
+    if (jieguo[1].statusCode === 200) {
+      return jieguo[1].data;
+    }
+
+    return null;
+  } catch (e) {
+    console.error('从云端获取儒教典籍目录失败', e);
+    return null;
+  }
+}
+
+/**
+ * 下载经文并保存到本地（已弃用，由页面直接处理）
  * @param {string} shuming - 书名
  * @returns {Promise<boolean>} 是否成功
  */
 export async function xiazaiBingBaocun(shuming) {
     try {
-        // 先从云端下载
         const neirong = await congYunduanHuoquJingwen(shuming);
 
         if (!neirong) {
-            uni.showToast({
-                title: '下载失败',
-                icon: 'none'
-            });
             return false;
         }
 
-        // 保存到本地
-        const chenggong = await import('./xiazai.js').then(m => m.baocunjingwen(shuming, neirong));
-
-        if (chenggong) {
-            uni.showToast({
-                title: '下载完成',
-                icon: 'success'
-            });
-        }
-
-        return chenggong;
+        const { baocunjingwen } = await import('./xiazai.js');
+        return baocunjingwen(shuming, neirong);
     } catch (e) {
         console.error('下载失败', e);
-        uni.showToast({
-            title: '下载失败',
-            icon: 'none'
-        });
         return false;
     }
 }

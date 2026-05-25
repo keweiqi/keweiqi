@@ -82,11 +82,11 @@ $uni-safe-area-bottom: env(safe-area-inset-bottom);
 /* 响应式混入（修复版） */
 @mixin respond-to($breakpoint) {
   @if $breakpoint == sm {
-    @media (max-width: $uni-breakpoint-md - 1) { @content; }
+    @media (max-width: ($uni-breakpoint-md - 1)) { @content; }
   } @else if $breakpoint == md {
-    @media (min-width: $uni-breakpoint-md) and (max-width: $uni-breakpoint-lg - 1) { @content; }
+    @media (min-width: $uni-breakpoint-md) and (max-width: ($uni-breakpoint-lg - 1)) { @content; }
   } @else if $breakpoint == lg {
-    @media (min-width: $uni-breakpoint-lg) and (max-width: $uni-breakpoint-xl - 1) { @content; }
+    @media (min-width: $uni-breakpoint-lg) and (max-width: ($uni-breakpoint-xl - 1)) { @content; }
   } @else if $breakpoint == xl {
     @media (min-width: $uni-breakpoint-xl) { @content; }
   }
